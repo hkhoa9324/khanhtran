@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student Portfolio — Nguyễn Thái Khánh Trân</title>
+  <meta name="description" content="Portfolio cá nhân của học sinh — kỹ năng, học vấn và liên hệ.">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --muted:#94a3b8;
+      --accent:#7c3aed;
+      --glass: rgba(255,255,255,0.04);
+      --radius:14px;
+      --max-width:1100px;
+    }
+    *{box-sizing:border-box;}
+    html,body{height:100%; margin:0; font-family:Inter, sans-serif; background: linear-gradient(180deg,var(--bg), #071122); color:#e6eef8; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;}
+    body{padding:20px; display:flex; justify-content:center;}
+    .wrap{
+      width:100%;
+      max-width:var(--max-width);
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
+      border-radius:20px;
+      padding:20px;
+      box-shadow:0 10px 30px rgba(2,6,23,0.7);
+      backdrop-filter: blur(6px);
+    }
+    header{
+      display:flex;
+      gap:20px;
+      align-items:center;
+      margin-bottom:20px;
+      flex-wrap:wrap;
+    }
+    .avatar{
+      width:100px;
+      height:100px;
+      border-radius:16px;
+      background:linear-gradient(135deg,var(--accent), #4f46e5);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:700;
+      font-size:28px;
+      color:white;
+      box-shadow:0 6px 18px rgba(124,58,237,0.18);
+      flex-shrink:0;
+    }
+    .hdr-info h1{margin:0; font-size:20px; line-height:1.2;}
+    .hdr-info p{margin:4px 0 0; color:var(--muted); font-size:14px;}
+    .social{margin-top:10px; display:flex; gap:16px; font-size:22px;}
+    .social a{color:var(--muted); transition:0.3s;}
+    .social a:hover{color:var(--accent); transform:scale(1.2);}
+    .main{display:grid; grid-template-columns:1fr 340px; gap:28px; align-items:start;}
+    .card{background:var(--card); padding:16px; border-radius:var(--radius); box-shadow:inset 0 1px 0 rgba(255,255,255,0.02);}
+    .section{margin-bottom:18px;}
+    .section h2{margin:0 0 8px; font-size:16px;}
+    .about p{color:var(--muted); line-height:1.5; margin:0;}
+    .skills{display:flex; flex-wrap:wrap; gap:8px; margin-top:8px;}
+    .skill{padding:6px 10px; border-radius:999px; background:rgba(255,255,255,0.03); font-size:13px; color:var(--muted); border:1px solid rgba(255,255,255,0.02);}
+    .side .box{margin-bottom:12px; padding:14px; border-radius:12px; background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);}
+    .side .box h2{margin-top:0; margin-bottom:8px;}
+    .contact a{display:block; color:var(--accent); text-decoration:none; margin-top:8px;}
+    footer{margin-top:20px; padding-top:12px; border-top:1px dashed rgba(255,255,255,0.03); text-align:center; font-size:13px; color:var(--muted);}
+    /* Responsive */
+    @media (max-width:900px){
+      .main{grid-template-columns:1fr;}
+      header{flex-direction:column; align-items:flex-start; gap:12px;}
+      .avatar{width:80px; height:80px; font-size:24px;}
+      .hdr-info h1{font-size:18px;}
+      .hdr-info p{font-size:13px;}
+      .side{margin-top:20px;}
+      .card{padding:14px;}
+      .skills{gap:6px;}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="avatar">KH</div>
+      <div class="hdr-info">
+        <h1>Nguyễn Thái Khánh Trân — Học sinh</h1>
+        <p>Trường THPT Nguyễn Thị Diệu · TP Hồ Chí Minh</p>
+        <div class="social">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+    </header>
+
+    <div class="main">
+      <div class="left">
+        <section class="card about section">
+          <h2>Giới thiệu ngắn</h2>
+          <p>Mình là Khánh Trân, hiện đang theo đuổi định hướng ngành truyền thông – marketing. Mình thích môi trường năng động, sáng tạo và được làm việc với ý tưởng. Thời gian rảnh, mình hay luyện kỹ năng edit, viết caption, làm visual và thử tạo nội dung theo trend.<br><br>Mình muốn trở thành phiên bản tốt hơn mỗi ngày và tìm cơ hội phát triển trong lĩnh vực sáng tạo sau này.</p>
+        </section>
+
+        <section class="card section">
+          <h2>Thông tin cá nhân</h2>
+          <ul style="margin:0;padding-left:18px;color:var(--muted)">
+            <li>Tính cách: vui vẻ, thân thiện, hơi lầy nhưng sống thật</li>
+            <li>Sở thích: nghe nhạc, chụp hình, lướt TikTok, skincare, ăn ngon</li>
+            <li>Quan điểm sống: “Cứ cố gắng mỗi ngày một chút, thành công sẽ tự tìm đến.”</li>
+            <li>Mục tiêu: hoàn thiện bản thân, học giỏi hơn và sống tự tin hơn mỗi ngày</li>
+            <li>Điều tự hào nhất: luôn cố gắng hết mình dù có lúc mệt</li>
+          </ul>
+        </section>
+
+        <section class="card section">
+          <h2>Thành tích</h2>
+          <ul style="margin:0;padding-left:18px;color:var(--muted)">
+            <li>11 năm liền học sinh khá giỏi</li>
+            <li>2 năm liền là đoàn viên ưu tú</li>
+            <li>Có kinh nghiệm trong việc quản lý công ty gia đình</li>
+          </ul>
+        </section>
+      </div>
+
+      <aside class="side">
+        <div class="box card contact">
+          <h2>Liên hệ</h2>
+          <div>Email: <a href="mailto:khanhtrannguyenthai@gmail.com">khanhtrannguyenthai@gmail.com</a></div>
+          <div>Số điện thoại: <a href="#">0907847838</a></div>
+          <div style="margin-top:10px;"><a class="button" href="mailto:khanhtrannguyenthai@gmail.com" style="padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent), #4f46e5);color:white;text-decoration:none;">Gửi email</a></div>
+        </div>
+
+        <div class="box card">
+          <h2>Sở thích & Hoạt động cá nhân</h2>
+          <ul style="margin:0;padding-left:18px;color:var(--muted)">
+            <li>Nghe nhạc, đặc biệt là K-pop và ballad</li>
+            <li>Chụp hình, quay video, làm content sáng tạo</li>
+            <li>Lướt TikTok để học trend mới</li>
+            <li>Skincare và chăm sóc bản thân</li>
+            <li>Tham gia các hoạt động ngoại khóa và CLB của trường</li>
+          </ul>
+        </div>
+
+        <div class="box card">
+          <h2>Học vấn</h2>
+          <div class="meta">2023 — Hiện nay: Trường THPT Nguyễn Thị Diệu</div>
+          <div style="margin-top:8px;color:var(--muted);font-size:13px;">Chuyên: [nếu có] · Học lực: [Giỏi/Khá]</div>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      © <span id="year"></span> Nguyễn Thái Khánh Trân — Portfolio học sinh.
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
